@@ -6,7 +6,7 @@ using namespace std;
 //p->put/write
 int main(void){
     ifstream fin;
-    fin.open("myfile.txt");
+    fin.open("myfile.txt",ios::app);
     cout << fin.tellg() << endl; //get position of file pointer
     cout << (char)fin.get()<<(char)fin.get()<<endl;
     cout << fin.tellg() <<endl; //fin pointing to 2th index

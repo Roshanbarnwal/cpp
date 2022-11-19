@@ -1,7 +1,8 @@
 #include <fstream>
 #include <iostream>
 using namespace std;
-
+//using constructor in place of open() method, the particular stream will be attached to a single file for the 
+//entire program while we can handle multiple files with a single stream object if it is created using open().
 int main(void){
     ifstream fin;   //generate input data stream to take input whose one end is 'fin'
     fin.open("myfile.txt"); //connects 'fin' to "myfile.txt"
