@@ -10,11 +10,14 @@ int main(void){
         if(i==2)
             throw 2;
         if(i==3)
-            throw 3;   //no statements run after throw statements.
+            throw 3.2;   //no statements run after throw statements.
         cout <<"In Try"<<endl;
     }
     catch(int e){   //if first catch doesn't match throw then next catch will be checked & so on.
         cout<<"Exception no: "<<e<<endl;    //if first catch is matched, then other catch(){} won't be checked.
+    }
+    catch(int b){       //catch handlers can have same type.
+        cout<<"Exception no: "<<b<<endl;
     }
     catch(double e){
         cout<<"Exception no: "<<e<<endl;

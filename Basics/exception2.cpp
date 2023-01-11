@@ -4,7 +4,7 @@ void fun(){
     throw 10;
 }
 int main(void){
-    int i=2;
+    int i=10;
     cout << "Welcome!"<<endl;
     try{
         if(i==1)

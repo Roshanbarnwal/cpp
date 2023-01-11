@@ -16,6 +16,11 @@ int main(void){
         // fin>>ch;
         ch = fin.get();
     }
+    ofstream fout;
+    fout.open("myfile.txt",ios::ate);
+    fout.seekp(0,ios::end);
+    int n = fout.tellp();
+    cout<<n<<endl;
     fin.close();
     
 }

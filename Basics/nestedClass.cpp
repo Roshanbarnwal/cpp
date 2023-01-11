@@ -13,7 +13,8 @@ class Student{
                 char state[20];
                 char pincode[7];
             public:
-                void setAddress(int h, char *s, char *c, char *st,char *p){
+                // void setAddress(int h, char *s, char *c, char *st, char *p){
+                void setAddress(int h,const char *s,const char *c,const char *st,const char *p){
                     houseno = h;
                     strcpy(street,s);
                     strcpy(city,c);
@@ -30,10 +31,10 @@ class Student{
         Address add;
         public:
             void setRno(int r){rno = r;}
-            void setName(char *n){
+            void setName(const char *n){
                 strcpy(name,n);
             }
-            void setAddress(int h, char *s, char *c, char *st, char *p){
+            void setAddress(int h,const char *s,const char *c,const char *st,const char *p){
                 add.setAddress(h,s,c,st,p);
             }
             void show_Student(){

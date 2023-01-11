@@ -13,7 +13,7 @@ class A{
         A operator++(int){  //postfix operator overloading take an argument but doesn't use it. It is only there
             A tmp;          // for making compiler understand that it is for postfix.
             tmp.a = a++;
-            tmp.b = b++;
+            tmp.b = b++; 
             return tmp;
         }
 
