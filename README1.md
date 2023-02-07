@@ -1,2 +1,3 @@
 This file is for experimenting rebase concept.
-git log
+
+git log ###########
