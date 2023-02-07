@@ -2,8 +2,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(void){
- cout<<"hello world!";
+int main(void){    
     cout<<"Give number: ";
     int num;
     cin>>num;
